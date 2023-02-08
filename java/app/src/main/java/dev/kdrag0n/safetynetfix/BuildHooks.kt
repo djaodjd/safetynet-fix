@@ -7,7 +7,7 @@ internal object BuildHooks {
         // Append a space to the device model name
         Build::class.java.getDeclaredField("MODEL").let { field ->
             field.isAccessible = true
-            field.set(null, Build.MODEL + " ")
+            field.set(null, Build.MODEL)
         }
     }
 }
